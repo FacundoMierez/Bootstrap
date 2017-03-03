@@ -1,80 +1,82 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Bootstrap 4</title>
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<!--CSS FONT AWESOME -->
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-</head>
-<style>
-	.bg{
-		background-color: #455a64;
-		height: 100px;
-	}
-	[class^="col"]{
-		background-color: #eceff1;
-		border: 1px solid rgba(86,61,124,.2);
-		min-height: 50px;
-	}
-	.row{
-		margin-top: 20px;
-	}
-</style>
-<body>
-!FlexBox!
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>flexBox</title>
 
-<div class="container">
-	 <div class="row">
-      <div class="col-xs">Col-xs</div>
-      <div class="col-xs">Col-xs</div>
-      <div class="col-xs">Col-xs</div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+    <!-- Agregamos CSS Fonts Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+  <style>
+  .bg{
+    background-color: #455a64;
+    height: 100px;
+  }
+    [class^="col"] {
+    background-color:#eceff1;
+    border: 1px solid rgba(86,61,124,.2);
+    min-height: 50px;
+    }
+    .row{
+      margin-top: 20px;
+    }
+  </style>
+
+  <!-- auto-layout -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs">Uno</div>
+      <div class="col-xs">Dos</div>
+      <div class="col-xs">Tres</div>
     </div>
     <div class="row">
-    	<div class="col-xs">Col-xs</div>
-    	<div class="col-xs">Col-xs</div>
+      <div class="col-xs">Uno</div>
+      <div class="col-xs">Dos</div>
+    </div>
+  </div>
+
+  
+
+  <div class="container">
+  <h1>Auto-Layout Celda Ancho fijo</h1>
+    <div class="row">
+      <div class="col-xs-6">Seis-col</div>
+      <div class="col-xs">col</div>
+      <div class="col-xs">col</div>
     </div>
     <div class="row">
-    	<div class="col-xs-6 col-md-6">Col-md-6 | Col-xs-6</div>
-    	<div class="col-xs-6 col-md-6">Col-md-6 | Col-xs-6</div>
+      <div class="col-xs">col</div>
+      <div class="col-xs-9">nueve-col</div>
+      <div class="col-xs">col</div>
     </div>
-</div>
+  </div>
 
-<hr>
+  <div class="container">
+    <h1>Alineacion Vertical</h1>
+    <div class="bg row flex-items-xs-top">
+      <div class="col-xs">Uno</div>
+      <div class="col-xs">Dos</div>
+    </div>
+    <div class="bg row flex-items-xs-middle">
+      <div class="col-xs">Uno</div>
+      <div class="col-xs">Dos</div>
+    </div>
 
-<div class="container">
-	<h1 align="center">AutoLayout celda ancho fijo</h1>
-	<div class="row">
-		<div class="col-xs-6">col-xs-6</div>
-		<div class="col-xs">col-xs</div>
-		<div class="col-xs">col-xs</div>
-	</div>
-	<div class="row">
-		<div class="col-xs">col-xs</div>
-		<div class="col-xs-9">col-xs-9</div>
-		<div class="col-xs">col-xs</div>
-	</div>
-</div>
-<hr>
-<div class="container">
-	<h1 align="center">Alineacion Vertical</h1>
-	<div class="bg row flex-items-xs-top">
-		<div class="col-xs">col-xs</div>
-		<div class="col-xs">col-xs</div>
-	</div>
+    <div class="bg row flex-items-xs-bottom">
+      <div class="col-xs">Uno</div>
+      <div class="col-xs">Dos</div>
+    </div>
+  </div>
 
-	<div class="bg row flex-items-xs-middle">
-		<div class="col-xs">col-xs</div>
-		<div class="col-xs">col-xs</div>
-	</div>
-
-	<div class="bg row flex-items-xs-bottom">
-		<div class="col-xs">col-xs</div>
-		<div class="col-xs">col-xs</div>
-	</div>
-
-</div>
-
-<div class="container">
+  <div class="container">
     <h1>Reordenar Elementos</h1>
     <div class="row">
       <div class="col-xs flex-xs-unordered">Uno</div>
@@ -84,7 +86,8 @@
   </div>
 
 
-<script src="./js/jquery-3.1.1.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-</body>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

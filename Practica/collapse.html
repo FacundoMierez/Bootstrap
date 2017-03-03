@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Collapse</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+    <!-- Agregamos CSS Fonts Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-xs-center">Componente:Collapse</h1>
+		
+		<button class="btn btn-primary" data-toggle="collapse" data-target="#collapse1" aria-expanded="false">Boton collapse</button>
+
+		<a href="#collapse1" class="btn btn-danger" data-toggle="collapse" aria-expanded="false">Link</a>
+
+		<div class="collapse" id="collapse1">
+			<div class="card card-block">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit magnam voluptate unde obcaecati voluptatem, qui, quis. Delectus quo molestiae eius. Commodi culpa enim nulla molestias reprehenderit amet placeat, nostrum incidunt!
+			</div>
+		</div>
+
+		<h2>Ejemplo Acordion</h2>
+
+		<div id="acordion" role="tablist" aria-multiselectable="true">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5>
+						<a href="#collapseuno" data-toggle="collapse" data-parent="#acordion" aria-expanded="true">Pestaña 1</a>
+					</h5>
+				</div>
+
+				<div id="collapseuno" role="tabpanel" class="collapse show">
+					<div class="card-block">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quos dolorum beatae, expedita fugit maxime molestias velit. Temporibus culpa dolor velit est sapiente deleniti, libero magni necessitatibus repudiandae, quo, animi.
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5>
+						<a href="#collapsedos" data-toggle="collapse" data-parent="#acordion" aria-expanded="true">Pestaña 2</a>
+					</h5>
+				</div>
+
+				<div id="collapsedos" role="tabpanel" class="collapse">
+					<div class="card-block">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates quidem a facilis maiores itaque suscipit dicta modi blanditiis illum perspiciatis aperiam est, ipsum, iure dolorum velit quis ab debitis.
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5>
+						<a href="#collapsetres" data-toggle="collapse" data-parent="#acordion" aria-expanded="true">Pestaña 3</a>
+					</h5>
+				</div>
+
+				<div id="collapsetres" role="tabpanel" class="collapse">
+					<div class="card-block">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eum aliquam dolores dolore soluta praesentium pariatur, quod dicta cupiditate culpa similique. Expedita minus consequatur cumque inventore quos sapiente totam obcaecati?
+					</div>
+				</div>
+			</div>
+
+		</div>
+      
+    </div>
+
+
+
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

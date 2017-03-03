@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <!-- Agregamos CSS Fonts Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h3 class="text-xs-center">Componente:FORM</h3>
+		<div class="row">
+			<div class="col-md-6">
+				<form action="">
+					<div class="form-group">
+						<label for="fm1">password</label>
+						<input id="fm1" type="password" class="form-control">
+					</div>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<form class="form-inline" action="">
+					<div class="form-group">
+						<label for="fm2">password</label>
+						<input id="fm2" type="password" class="form-control">
+					</div>
+				</form>
+			</div>
+		</div>
+		<h3>form Size</h3>
+		<div class="row">
+			<input type="text" class="form-control form-control-lg" placeholder="Texto lg" disabled>
+			<input type="text" class="form-control" placeholder="Texto Default">
+			<input type="text" class="form-control form-control-sm" placeholder="Texto sm">
+		</div>
+		<h3>checkbox y Radios</h3>
+			<div class="form-check">
+				<label for="" class="form-check-label">
+					<input type="checkbox" class="form-check-input">
+					ChecKbox
+				</label>
+			</div>
+			<div class="form-check disabled">
+				<label for="" class="form-check-label">
+					<input type="checkbox" class="form-check-input" disabled>
+					ChecKbox des.
+				</label>
+			</div>
+
+			<div class="form-check">
+				<label for="" class="form-check-label">
+					<input type="radio" class="form-check-input" name="radio" id="radio1" value="option1" checked>
+					Texto radio1
+				</label>
+			</div>
+			<div class="form-check">
+				<label for="" class="form-check-label">
+					<input type="radio" class="form-check-input" name="radio" id="radio2" value="option2">
+					Texto radio2
+				</label>
+			</div>
+			<div class="form-check disabled">
+				<label for="" class="form-check-label">
+					<input type="radio" class="form-check-input" disabled>
+					Texto radio des.
+				</label>
+			</div>
+	</div>	
+
+	<!-- jQuery first, then Bootstrap JS. -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>		
+</body>
+</html>
