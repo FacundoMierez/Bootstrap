@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Imagenes</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+    <!-- Agregamos CSS Fonts Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <style>
+    .contenedor{
+      width: 500px;
+      border:solid 2px #000;
+    }
+    .img-ts{
+      width: 300px;
+      height: 300px;
+    }
+    .img-txt{
+      width: 400px;
+      height: 300px;
+    }
+  </style>
+  <body> 
+
+
+  <div class="container">
+    <h1>Imagenes Adaptadas a su respectivo contenedor</h1>
+    <div class="contenedor">
+      <img class="img-fluid" src="img/img.jpg" alt=""><!--img-fluid se adapta a su contenedor -->
+    </div>
+
+    <h1>Image thumbnails</h1>
+      <img src="img/img.jpg" class="img-ts img-thumbnail" alt="">
+    
+    <h1>Alineacion de Imagenes</h1>
+      <img src="img/img.jpg" alt="" class="img-ts rounded float-xs-left">
+      <img src="img/img.jpg" alt="" class="img-ts rounded float-xs-right">
+       
+      <img src="img/img.jpg" alt="" class="img-ts rounded mx-auto d-block">
+
+      <h1>Imagen y Texto</h1>
+      <figure class="figure img-txt">
+        <img src="img/img.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption text-xs-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dicta, quis. Minus, officiis adipisci omnis laboriosam impedit earum fugit nobis. Enim maiores doloremque nesciunt accusantium, sunt, molestias est officiis laboriosam?</figcaption>
+      </figure>
+
+    
+  </div> 
+      
+      
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
